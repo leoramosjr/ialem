@@ -6,11 +6,13 @@ Para utilizar nossa plataforma, o usuário deve acessar nosso site e realizar o 
 
 ## 🚀 Funcionalidades
  - Responder as dúvidas do aluno :ballot_box_with_check:
- - Realizar a conexão entre aluno e professor :ballot_box_with_check:
+ - Realizar a conexão entre o aluno e professores parceiros :ballot_box_with_check:
  - Fornecer o conteúdo em diferentes formatos (slides, videoaulas) :black_square_button:
 
 ## Tecnologias Utilizadas
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [React](https://react.dev/)
+- [Chakra UI](https://chakra-ui.com/)
 - [OpenAI API](https://openai.com/blog/openai-api)
 
 ## Interface:
