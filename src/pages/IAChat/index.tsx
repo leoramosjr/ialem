@@ -43,7 +43,7 @@ export default function IAChat() {
         const prompt = `${question}`;
       
         try {
-          const apiKey = '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';
+          const apiKey = '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';
           const endpoint = 'https://api.openai.com/v1/engines/text-davinci-003/completions'; // URL do endpoint da API da OpenAI
       
           const response = await fetch(endpoint, {
