@@ -42,14 +42,14 @@ export default function NavBar() {
                 >
                     Nossa Ferramenta
                 </Link>
-                <Link
+                {/* <Link
                     href={"#"}
                     fontSize={"20px"}
                     fontWeight={"400"}
                     mr={"48px"}
                 >
                     Agende sua Aula
-                </Link>
+                </Link> */}
                 <Button
                     variant={"solid"}
                     label={"Acessar"}
