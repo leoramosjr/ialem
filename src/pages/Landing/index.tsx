@@ -6,13 +6,14 @@ import {
 import NavBar from '../../components/NavBar';
 import HeroImage from '/images/HeroImage.png';
 import Button from '../../components/base/Button';
+import WhoWeAreCarrousel from '../../components/WhoWeAreCarrousel';
   
 export default function Landing() {
   
     return (
         <Flex
             w={"100vw"}
-            direction={"column"}            
+            direction={"column"}
         >
             <NavBar />
             <Flex
@@ -25,6 +26,16 @@ export default function Landing() {
                 pl={"8rem"}
                 gap="2rem"
             >
+                <Image
+                    position={"absolute"}
+                    src={HeroImage}
+                    w={"69rem"}
+                    h={"39rem"}
+                    top={"20%"}
+                    left={"35%"}
+                    zIndex={-1}
+                    overflow={"hidden"}
+                />
                 <Text
                     w={"58rem"}
                     fontSize={"60px"}
@@ -56,16 +67,8 @@ export default function Landing() {
                         fontSize={'32px'}
                     />
                 </Flex>
-                <Image
-                    position={"absolute"}
-                    src={HeroImage}
-                    w={"69rem"}
-                    h={"39rem"}
-                    top={"20%"}
-                    left={"35%"}
-                    zIndex={-1}
-                />
             </Flex>
+            <WhoWeAreCarrousel />
         </Flex>
     )
 }

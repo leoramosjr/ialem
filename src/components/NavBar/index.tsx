@@ -20,6 +20,7 @@ export default function NavBar() {
             color={"black"}
             position={"fixed"}
             zIndex={2}
+            bgColor={"white"}
         >
             <Image
                 src={LogoImage}
