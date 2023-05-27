@@ -52,18 +52,21 @@ export default function NavBar() {
                 </Link>
                 <Button
                     variant={"solid"}
-                    label={"Login"}
+                    label={"Acessar"}
                     width={"230px"}
                     height={"60px"}
                     fontSize={"16px"}
+                    onClick={() => {
+                        window.location.href = '/iachat';
+                    }}
                 />
-                <Button
+                {/* <Button
                     variant={"outline"}
                     label={"Cadastrar-se"}
                     width={"230px"}
                     height={"60px"}
                     fontSize={"16px"}
-                />
+                /> */}
             </Flex>
         </Flex>
     )

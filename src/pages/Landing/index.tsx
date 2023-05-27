@@ -67,6 +67,9 @@ export default function Landing() {
                         height={'82px'}
                         label={'Acessar'}
                         fontSize={'32px'}
+                        onClick={() => {
+                            window.location.href = '/iachat';
+                        }}
                     />
                 </Flex>
             </Flex>
