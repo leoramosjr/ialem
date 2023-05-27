@@ -24,6 +24,7 @@ export default function NavBar() {
         >
             <Image
                 src={LogoImage}
+                w={{base: "150px", sm: "300px"}}
             />
             <Flex gap={"40px"} align={"center"}>
                 <Link
@@ -31,6 +32,7 @@ export default function NavBar() {
                     fontSize={"20px"}
                     fontWeight={"400"}
                     mr={"48px"}
+                    display={{base: "none", sm: "block"}}
                 >
                     Quem Somos
                 </Link>
@@ -38,7 +40,8 @@ export default function NavBar() {
                     href={"#nossa-ferramenta"}
                     fontSize={"20px"}
                     fontWeight={"400"}
-                    mr={"48px"}
+                    mr={"48px"} 
+                    display={{base: "none", sm: "block"}}
                 >
                     Nossa Ferramenta
                 </Link>
@@ -53,8 +56,8 @@ export default function NavBar() {
                 <Button
                     variant={"solid"}
                     label={"Acessar"}
-                    width={"230px"}
-                    height={"60px"}
+                    width={{base: "80px", sm: "230px"}}
+                    height={{base: "40px", sm: "60px"}}
                     fontSize={"16px"}
                     onClick={() => {
                         window.location.href = '/iachat';

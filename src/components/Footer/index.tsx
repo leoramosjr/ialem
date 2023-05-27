@@ -12,16 +12,16 @@ export default function Footer() {
     return (
         <Flex
             w={"100vw"}
-            h={"350"}
+            h={{base: "200px", sm: "350px"}}
             backgroundColor={"#94B0ED"}
             direction={"column"}
             align={"center"}
             justify={"center"}
-            padding="0 100px"
+            padding={{base: "0", sm: "0 100px"}}
         >
             <Text
                 color="white"
-                fontSize={"64px"}
+                fontSize={{base: "24px", sm: "64px"}}
                 fontWeight={"600"}
                 lineHeight={"1.25"}
                 fontFamily={"'Fira Sans', sans-serif"}
@@ -31,7 +31,7 @@ export default function Footer() {
                 direction={"row"}
                 align={"center"}
                 justify={"center"}
-                gap="10rem"
+                gap={{base: "2rem", sm: "10rem"}}
                 padding={"2rem 0"}
             >
                 <Image
