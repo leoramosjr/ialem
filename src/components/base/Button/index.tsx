@@ -12,10 +12,10 @@ export default function Button(
         onClick,
     } : {
         variant?: "outline" | "solid" | undefined,
-        width?: string,
-        height?: string,
+        width?: string | object,
+        height?: string | object,
         label: string,
-        fontSize?: string,
+        fontSize?: string | object,
         onClick?: () => void,
     }
 ) {

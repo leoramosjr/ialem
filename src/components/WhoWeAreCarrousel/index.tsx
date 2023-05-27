@@ -15,12 +15,12 @@ export default function WhoWeAreCarrousel() {
     return (
         <Flex
             w={"100vw"}
-            h={"801px"}
+            h={{base: "auto", sm: "801px"}}
             backgroundColor={"#94B0ED"}
             direction={"column"}
         >
             <Flex
-                transform={"translateY(-160px)"}
+                transform={{base: "translateY(-30px)", sm: "translateY(-160px)"}}
                 id='quem-somos'
             />
             <Flex
@@ -28,90 +28,99 @@ export default function WhoWeAreCarrousel() {
                 direction={"row"}
                 align={"flex-start"}
                 justify={"flex-start"}
-                pl="128px"
+                pl={{base: "16px", sm: "128px"}}
             >
                 <Flex
-                    h="270px"
-                    w="412px"
+                    h={{base: "100px", sm: "270px"}}
+                    w={{base: "33%", sm: "412px"}}
                     bgColor={currentSlide !== 0 ? "#94B0ED" : "white"}
                     position="relative"
                     border="4px solid #94B0ED"
                     borderBottom="none"
                     borderRadius={"50px 50px 0px 0px"}
-                    transform={currentSlide !== 0 ? "translateY(0)" : "translateY(-35px)"}
+                    transform={{base: currentSlide !== 0 ? "translateY(0)" : "translateY(-20px)" ,sm: currentSlide !== 0 ? "translateY(0)" : "translateY(-35px)"}}
                     transition={"transform 0.3s ease-in-out, background-color 0.3s ease-in-out, padding-top 0.3s ease-in-out"}
                     onClick={() => setCurrentSlide(0)}
                     cursor="pointer"
                     direction="column"
-                    pt={currentSlide !== 0 ? "50px" : "85px"}
-                    pl="64px"
+                    pt={{base: currentSlide !== 0 ? "0px" : "0px", sm: currentSlide !== 0 ? "50px" : "85px"}}
+                    pl={{base: "8px", sm: "64px"}}
                     gap="1rem"
                 >
                     <Text
+                        mt={{base: "12px", sm: "0"}}
+                        ml={{base: "2px", sm: "0"}}
                         color={currentSlide !== 0 ? "white" : "black"}
                         transition={"color 0.3s ease-in-out"}
-                        fontSize="32px"
+                        fontSize={{base: "16px", sm: "32px"}}
                         fontWeight="700"
                     >Quem Somos</Text>
                     <Text
+                        display={{base: "none", sm: "block"}}
                         w="221px"
                         color={currentSlide !== 0 ? "white" : "black"}
                         transition={"color 0.3s ease-in-out"}
                     >Conheça a nossa equipe</Text>
                 </Flex>
                 <Flex
-                    h="270px"
-                    w="412px"
+                    h={{base: "100px", sm: "270px"}}
+                    w={{base: "33%", sm: "412px"}}
                     bgColor={currentSlide !== 1 ? "#94B0ED" : "white"}
                     position="relative"
                     border="4px solid #94B0ED"
                     borderBottom="none"
                     borderRadius={"50px 50px 0px 0px"}
-                    transform={currentSlide !== 1 ? "translateY(0)" : "translateY(-35px)"}
+                    transform={{base: currentSlide !== 1 ? "translateY(0)" : "translateY(-20px)" ,sm: currentSlide !== 1 ? "translateY(0)" : "translateY(-35px)"}}
                     transition={"transform 0.3s ease-in-out, background-color 0.3s ease-in-out, padding-top 0.3s ease-in-out"}
                     onClick={() => setCurrentSlide(1)}
                     cursor="pointer"
                     direction="column"
-                    pt={currentSlide !== 1 ? "50px" : "85px"}
-                    pl="64px"
+                    pt={{base: currentSlide !== 1 ? "0px" : "0px", sm: currentSlide !== 1 ? "50px" : "85px"}}
+                    pl={{base: "8px", sm: "64px"}}
                     gap="1rem"
                 >
                     <Text
+                        mt={{base: "12px", sm: "0"}}
+                        ml={{base: "2px", sm: "0"}}
                         color={currentSlide !== 1 ? "white" : "black"}
                         transition={"color 0.3s ease-in-out"}
-                        fontSize="32px"
+                        fontSize={{base: "16px", sm: "32px"}}
                         fontWeight="700"
                     >Nossa História</Text>
                     <Text
+                        display={{base: "none", sm: "block"}}
                         w="221px"
                         color={currentSlide !== 1 ? "white" : "black"}
                         transition={"color 0.3s ease-in-out"}
                     >Veja de onde viemos e para onde queremos ir</Text>
                 </Flex>
                 <Flex
-                    h="270px"
-                    w="412px"
+                    h={{base: "100px", sm: "270px"}}
+                    w={{base: "33%", sm: "412px"}}
                     bgColor={currentSlide !== 2 ? "#94B0ED" : "white"}
                     position="relative"
                     border="4px solid #94B0ED"
                     borderBottom="none"
                     borderRadius={"50px 50px 0px 0px"}
-                    transform={currentSlide !== 2 ? "translateY(0)" : "translateY(-35px)"}
+                    transform={{base: currentSlide !== 2 ? "translateY(0)" : "translateY(-20px)" ,sm: currentSlide !== 2 ? "translateY(0)" : "translateY(-35px)"}}
                     transition={"transform 0.3s ease-in-out, background-color 0.3s ease-in-out, padding-top 0.3s ease-in-out"}
                     onClick={() => setCurrentSlide(2)}
                     cursor="pointer"
                     direction="column"
-                    pt={currentSlide !== 2 ? "50px" : "85px"}
-                    pl="64px"
+                    pt={{base: currentSlide !== 2 ? "0px" : "0px", sm: currentSlide !== 2 ? "50px" : "85px"}}
+                    pl={{base: "8px", sm: "64px"}}
                     gap="1rem"
                 >
                     <Text
+                        mt={{base: "12px", sm: "0"}}
+                        ml={{base: "2px", sm: "0"}}
                         color={currentSlide !== 2 ? "white" : "black"}
                         transition={"color 0.3s ease-in-out"}
-                        fontSize="32px"
+                        fontSize={{base: "16px", sm: "32px"}}
                         fontWeight="700"
                     >Nosso propósito</Text>
                     <Text
+                        display={{base: "none", sm: "block"}}
                         w="221px"
                         color={currentSlide !== 2 ? "white" : "black"}
                         transition={"color 0.3s ease-in-out"}
@@ -120,25 +129,25 @@ export default function WhoWeAreCarrousel() {
             </Flex>
             <Flex
                 w={"100%"}
-                h={"500px"}
+                h={{base: "auto", sm: "500px"}}
                 direction={"row"}
                 bgColor="white"
                 transform={"translateY(-35px)"}
-                pl="64px"
+                pl={{base: "0", sm: "64px"}}
             >
                 {
                     currentSlide === 0 ? (
                     <Flex
                         w="100%"
                         h="100%"
-                        justify={"space-between"}
-                        align={"center"}
-                        padding="0 100px"
+                        justify={{base: "center", sm: "space-between"}}
+                        align={{base: "center", sm: "center"}}
+                        padding={{base: "36px 36px", sm: "0 100px"}}
                         gap="5rem"
                         display={currentSlide === 0 ? "flex" : "none"}
                     >
                         <Text
-                            fontSize={"32px"}
+                            fontSize={{base: "24px", sm: "32px"}}
                             fontWeight={"400"}
                             w={"100%"}
                             lineHeight={"1.25"}
@@ -148,22 +157,24 @@ export default function WhoWeAreCarrousel() {
                         </Text>
                         <Image
                             src={WhoWeAre}
+                            display={{base: "none", sm: "block"}}
                         />
                     </Flex>
                     ) : currentSlide === 1 ? (
                     <Flex
                         w="100%"
                         h="100%"
-                        justify={"space-between"}
-                        align={"center"}
-                        padding="0 100px"
+                        justify={{base: "center", sm: "space-between"}}
+                        align={{base: "center", sm: "center"}}
+                        padding={{base: "36px 36px", sm: "0 100px"}}
                         gap="5rem"
                     >
                         <Image
                             src={OurHistory}
+                            display={{base: "none", sm: "block"}}
                         />
                         <Text
-                            fontSize={"32px"}
+                            fontSize={{base: "24px", sm: "32px"}}
                             fontWeight={"400"}
                             w={"100%"}
                             lineHeight={"1.25"}
@@ -176,13 +187,13 @@ export default function WhoWeAreCarrousel() {
                     <Flex
                         w="100%"
                         h="100%"
-                        justify={"space-between"}
-                        align={"center"}
-                        padding="0 100px"
+                        justify={{base: "center", sm: "space-between"}}
+                        align={{base: "center", sm: "center"}}
+                        padding={{base: "36px 36px", sm: "0 100px"}}
                         gap="5rem"
                     >
                         <Text
-                            fontSize={"32px"}
+                            fontSize={{base: "24px", sm: "32px"}}
                             fontWeight={"400"}
                             w={"100%"}
                             lineHeight={"1.25"}
@@ -192,6 +203,7 @@ export default function WhoWeAreCarrousel() {
                         </Text>
                         <Image
                             src={OurPourpose}
+                            display={{base: "none", sm: "block"}}
                         />
                     </Flex>
                     )

@@ -43,7 +43,7 @@ export default function IAChat() {
         const prompt = `${question}`;
       
         try {
-          const apiKey = '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';
+          const apiKey = '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';
           const endpoint = 'https://api.openai.com/v1/engines/text-davinci-003/completions'; // URL do endpoint da API da OpenAI
       
           const response = await fetch(endpoint, {
@@ -101,7 +101,7 @@ export default function IAChat() {
         <Flex w={'100vw'} h={'100vh'} direction={'column'}>
             <Flex
                 w={'100vw'}
-                h={'7.5rem'}
+                h={{base: "5rem", sm: '7.5rem'}}
                 direction={'row'}
                 justify={'space-between'}
                 align={'center'}
@@ -113,12 +113,15 @@ export default function IAChat() {
                 bgColor={'white'}
                 boxShadow={'0px 4px 4px rgba(0, 0, 0, 0.25)'}
             >
-                <Image src={LogoImage} />
+                <Image
+                    width={{base: "150px", sm: "300px"}}
+                    src={LogoImage}
+                />
                 <Button
                     variant={"solid"}
                     label={"Sair"}
-                    width={"230px"}
-                    height={"60px"}
+                    width={{base: "80px", sm: "230px"}}
+                    height={{base: "40px", sm: "60px"}}
                     fontSize={"16px"}
                     onClick={() => {
                         window.location.href = '/';
@@ -130,7 +133,7 @@ export default function IAChat() {
                 flex={1}
                 h={"auto"}
                 direction={'column'}
-                p={'150px 208px 40px'}
+                p={{base: "20px", sm: '150px 208px 40px'}}
                 overflowY={'scroll'}
                 scrollBehavior={'smooth'}
                 bgColor={'#F2F2F2'}
@@ -152,6 +155,7 @@ export default function IAChat() {
                                 borderRadius={'16px 0 16px 16px'}
                                 fontFamily={"'Secular One', sans-serif"}
                                 fontWeight="400"
+                                fontSize={{base: "12px", sm: "16px"}}
                             >
                                 {message.question}
                             </Text>
@@ -159,6 +163,7 @@ export default function IAChat() {
                                 src={CharUser}
                                 w={'100px'}
                                 h={'100px'}
+                                display={{base: "none", sm: "block"}}
                             />
                         </Flex>
                     )}
@@ -168,6 +173,7 @@ export default function IAChat() {
                                 src={CharIA}
                                 w={'100px'}
                                 h={'100px'}
+                                display={{base: "none", sm: "block"}}
                                 borderRadius={"50%"}
                             />
                             <Text
@@ -177,6 +183,7 @@ export default function IAChat() {
                                 borderRadius={'0 16px 16px 16px'}
                                 fontFamily={"'Secular One', sans-serif"}
                                 fontWeight="400"
+                                fontSize={{base: "12px", sm: "16px"}}
                             >
                                 {message.answer}
                             </Text>
@@ -188,7 +195,7 @@ export default function IAChat() {
             <Flex
                 w={'100vw'}
                 h={'10rem'}
-                p={'0 48px 24px'}
+                p={{base: "8px", sm: '0 48px 24px'}}
                 bgColor={'white'}
                 align={'center'}
                 justify={'center'}
@@ -218,7 +225,7 @@ export default function IAChat() {
                     w="80%"
                     align={'center'}
                     justify={'center'}
-                    gap={"2rem"}
+                    gap={{base: "1rem", sm: "2rem"}}
                 >
                     <Input
                         flex={1}
@@ -231,7 +238,7 @@ export default function IAChat() {
                     <Button
                         variant={"solid"}
                         label={"Enviar"}
-                        width={"180px"}
+                        width={{base: "100px", sm: "180px"}}
                         height={"40px"}
                         fontSize={"16px"}
                         onClick={() => handleSendMessage()}

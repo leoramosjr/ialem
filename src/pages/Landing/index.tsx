@@ -20,13 +20,15 @@ export default function Landing() {
             <NavBar />
             <Flex
                 w={"100%"}
-                h={"100vh"}
+                h={{base: "auto", sm: "100vh"}}
                 position={"relative"}
                 zIndex={1}
                 direction={"column"}
                 justify={"center"}
-                pl={"8rem"}
+                pl={{base: "48px", sm: "8rem"}}
+                pr={{base: "48px", sm: "0"}}
                 gap="2rem"
+                mb={{base: "5rem", sm: "0"}}
             >
                 <Image
                     position={"absolute"}
@@ -37,36 +39,39 @@ export default function Landing() {
                     left={"35%"}
                     zIndex={-1}
                     overflow={"hidden"}
+                    display={{base: "none", sm: "block"}}
                 />
                 <Text
-                    w={"58rem"}
-                    fontSize={"60px"}
+                    w={{base: "100%", sm: "58rem"}}
+                    fontSize={{base: "24px", sm: "60px"}}
                     fontWeight={"500"}
                     lineHeight={"auto"}
                     fontFamily={"'Secular One', sans-serif"}
+                    textAlign={{base: "center", sm: "left"}}
                 >
                     A melhor ferramenta para você <Text as="span" color={"#94B0ED"}>ir além</Text> nos seus estudos
                 </Text>
                 <Flex
-                    w={"640px"}
+                    w={{base: "100%", sm: "600px"}}
                     direction={"column"}
                     align={"center"}
                     gap={"6rem"}
                 >
                     <Text
-                        fontSize={"28px"}
+                        fontSize={{base: "16px", sm: "28px"}}
                         fontWeight={"400"}
                         w={"100%"}
                         lineHeight={"1.25"}
                         fontFamily={"'Fira Sans', sans-serif"}
+                        textAlign={{base: "center", sm: "left"}}
                     >
                         Nossa Inteligência Artificial irá ajudar-lhe com suas dúvidas nos conteúdos de Ensino Fundamental ao Ensino Médio, incluindo Matemática, Química, Biologia, entre outras competências
                     </Text>
                     <Button
-                        width={'297px'}
-                        height={'82px'}
+                        width={{base: "200px", sm: "297px"}}
+                        height={{base: "50px", sm: "82px"}}
                         label={'Acessar'}
-                        fontSize={'32px'}
+                        fontSize={{base: "24px", sm: '32px'}}
                         onClick={() => {
                             window.location.href = '/iachat';
                         }}

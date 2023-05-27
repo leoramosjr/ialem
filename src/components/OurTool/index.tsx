@@ -10,31 +10,32 @@ export default function OurTool() {
     return (
         <Flex
             w={"100vw"}
-            h={"710px"}
+            h={{base: "auto", sm: "710px"}}
             backgroundColor={"white"}
-            direction={"row"}
+            direction={{base: "column", sm: "row"}}
             align={"center"}
-            justify={"space-between"}
-            padding="0 100px"
-            id='nossa-ferramenta'
+            justify={{base: "center", sm: "space-between"}}
+            padding={{base: "2rem 16px", sm: "0 100px"}}
+            id='nnossa-ferramenta'
+            textAlign={{base: "center", sm: "left"}}
         >
             <Flex
-                w={"50%"}
-                h={"100%"}
+                w={{base: "100%", sm: "50%"}}
+                h={{base: "auto", sm: "100%"}}
                 direction={"column"}
                 justify={"center"}
                 gap={"2rem"}
             >
                 <Text
                     color="#2B8EAD"
-                    fontSize={"64px"}
+                    fontSize={{base: "24px", sm: "64px"}}
                     fontWeight={"700"}
                     w={"100%"}
                     lineHeight={"1.25"}
                     fontFamily={"'Fira Sans', sans-serif"}
                 >A ferramenta <Text as="span" color={"#94B0ED"}>IAlém:</Text></Text>
                 <Text
-                    fontSize={"32px"}
+                    fontSize={{base: "24", sm: "32px"}}
                     fontWeight={"400"}
                     w={"100%"}
                     lineHeight={"1.25"}
