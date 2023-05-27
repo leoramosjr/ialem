@@ -7,6 +7,8 @@ import NavBar from '../../components/NavBar';
 import HeroImage from '/images/HeroImage.png';
 import Button from '../../components/base/Button';
 import WhoWeAreCarrousel from '../../components/WhoWeAreCarrousel';
+import OurTool from '../../components/OurTool';
+import Footer from '../../components/Footer';
   
 export default function Landing() {
   
@@ -69,6 +71,8 @@ export default function Landing() {
                 </Flex>
             </Flex>
             <WhoWeAreCarrousel />
+            <OurTool />
+            <Footer />
         </Flex>
     )
 }

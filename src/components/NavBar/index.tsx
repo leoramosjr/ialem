@@ -27,7 +27,7 @@ export default function NavBar() {
             />
             <Flex gap={"40px"} align={"center"}>
                 <Link
-                    href={"#"}
+                    href={"#quem-somos"}
                     fontSize={"20px"}
                     fontWeight={"400"}
                     mr={"48px"}
@@ -35,7 +35,7 @@ export default function NavBar() {
                     Quem Somos
                 </Link>
                 <Link
-                    href={"#"}
+                    href={"#nossa-ferramenta"}
                     fontSize={"20px"}
                     fontWeight={"400"}
                     mr={"48px"}

@@ -1,9 +1,13 @@
 import {
     Flex,
+    Image,
     Text,
 } from '@chakra-ui/react';
 import { useState } from 'react';
-  
+import WhoWeAre from '/images/WhoWeAre.png';
+import OurHistory from '/images/OurHistory.png';
+import OurPourpose from '/images/OurPourpose.png';
+
 export default function WhoWeAreCarrousel() {
   
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -15,6 +19,10 @@ export default function WhoWeAreCarrousel() {
             backgroundColor={"#94B0ED"}
             direction={"column"}
         >
+            <Flex
+                transform={"translateY(-160px)"}
+                id='quem-somos'
+            />
             <Flex
                 w={"100%"}
                 direction={"row"}
@@ -116,7 +124,78 @@ export default function WhoWeAreCarrousel() {
                 direction={"row"}
                 bgColor="white"
                 transform={"translateY(-35px)"}
+                pl="64px"
             >
+                {
+                    currentSlide === 0 ? (
+                    <Flex
+                        w="100%"
+                        h="100%"
+                        justify={"space-between"}
+                        align={"center"}
+                        padding="0 100px"
+                        gap="5rem"
+                        display={currentSlide === 0 ? "flex" : "none"}
+                    >
+                        <Text
+                            fontSize={"32px"}
+                            fontWeight={"400"}
+                            w={"100%"}
+                            lineHeight={"1.25"}
+                            fontFamily={"'Fira Sans', sans-serif"}
+                        >
+                            Somos uma plataforma de ensino que auxilia, de forma amigável, no aprendizado e reforço escolar de alunos da educação básica.
+                        </Text>
+                        <Image
+                            src={WhoWeAre}
+                        />
+                    </Flex>
+                    ) : currentSlide === 1 ? (
+                    <Flex
+                        w="100%"
+                        h="100%"
+                        justify={"space-between"}
+                        align={"center"}
+                        padding="0 100px"
+                        gap="5rem"
+                    >
+                        <Image
+                            src={OurHistory}
+                        />
+                        <Text
+                            fontSize={"32px"}
+                            fontWeight={"400"}
+                            w={"100%"}
+                            lineHeight={"1.25"}
+                            fontFamily={"'Fira Sans', sans-serif"}
+                        >
+                            Surgimos a partir da participação no evento Hackatona que nos deu a oportunidade de discutir soluções para problemas atuais. Com muita dedicação, trabalho em equipe e café, muito café, desenvolvemos nossa ideia. Um grupo de 6 alunos cursando o 1º semestre de engenharia de software, cujo objetivo é facilitar a vida de outros estudantes.
+                        </Text>
+                    </Flex>
+                    ) : (
+                    <Flex
+                        w="100%"
+                        h="100%"
+                        justify={"space-between"}
+                        align={"center"}
+                        padding="0 100px"
+                        gap="5rem"
+                    >
+                        <Text
+                            fontSize={"32px"}
+                            fontWeight={"400"}
+                            w={"100%"}
+                            lineHeight={"1.25"}
+                            fontFamily={"'Fira Sans', sans-serif"}
+                        >
+                            Nosso propósito é democratizar a educação com qualidade para todos os alunos da rede básica de ensino, trazendo retornos positivos no seu desempenho escolar.
+                        </Text>
+                        <Image
+                            src={OurPourpose}
+                        />
+                    </Flex>
+                    )
+                }
             </Flex>
         </Flex>
     )
