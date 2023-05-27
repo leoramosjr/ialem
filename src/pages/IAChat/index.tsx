@@ -133,7 +133,7 @@ export default function IAChat() {
                 flex={1}
                 h={"auto"}
                 direction={'column'}
-                p={{base: "20px", sm: '150px 208px 40px'}}
+                p={{base: "60px 20px", sm: '150px 208px 40px'}}
                 overflowY={'scroll'}
                 scrollBehavior={'smooth'}
                 bgColor={'#F2F2F2'}
@@ -151,7 +151,7 @@ export default function IAChat() {
                             <Text
                                 maxW={"80%"}
                                 bg={'#FFFFFF'}
-                                p={"24px"}
+                                p={{base: "16px", sm: "24px"}}
                                 borderRadius={'16px 0 16px 16px'}
                                 fontFamily={"'Secular One', sans-serif"}
                                 fontWeight="400"
@@ -179,7 +179,7 @@ export default function IAChat() {
                             <Text
                                 maxW={"80%"}
                                 bg={'#94B0ED'}
-                                p={"24px"}
+                                p={{base: "16px", sm: "24px"}}
                                 borderRadius={'0 16px 16px 16px'}
                                 fontFamily={"'Secular One', sans-serif"}
                                 fontWeight="400"
