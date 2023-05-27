@@ -11,9 +11,9 @@ Para utilizar nossa plataforma, o usuário deve acessar nosso site e realizar o 
 
 ## Tecnologias Utilizadas
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
-- [OpenAI API](https://openai.com/blog/openai-api)
 - [React](https://react.dev/)
 - [Chakra UI](https://chakra-ui.com/)
+- [OpenAI API](https://openai.com/blog/openai-api)
 
 ## Interface:
 ![localhost_5173_ (2)](https://github.com/GuilhermeVSam/AIFODA/assets/95715483/b61e6099-1124-4dac-9bf4-72b47d755569)
