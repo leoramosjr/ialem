@@ -37,18 +37,19 @@ export default function Footer() {
                 <Image
                     h="auto"
                     w="20%"
+                    src={Globo}
+                    filter={"brightness(0) invert(1);"}
+                />
+                <Image
+                    h="auto"
+                    w="20%"
                     src={Creatus}
                 />
                 <Image
                     h="auto"
                     w="20%"
-                    filter={"brightness(0) invert(1);"}
-                    src={Globo}
-                />
-                <Image
-                    h="auto"
-                    w="20%"
                     src={Eldorado}
+                    filter={"brightness(0) invert(1);"}
                 />
             </Flex>
         </Flex>
